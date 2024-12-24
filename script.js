@@ -8,15 +8,15 @@ hideButtons.forEach((button, index) => {
 
     hideButtons.forEach((btn, idx) => {
       queries[idx].querySelector(".innerdiv").style.display = "none";
-      btn.style.backgroundImage = "url('./assets/images/icon-plus.svg')";
+      btn.style.backgroundImage = "url('assets/images/icon-plus.svg')";
     });
 
     if (isHidden) {
       answer.style.display = "block";
-      button.style.backgroundImage = "url('./assets/images/icon-minus.svg')";
+      button.style.backgroundImage = "url('assets/images/icon-minus.svg')";
     } else {
       answer.style.display = "none";
-      button.style.backgroundImage = "url('./assets/images/icon-plus.svg')";
+      button.style.backgroundImage = "url('assets/images/icon-plus.svg')";
     }
   });
 });
