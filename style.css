@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; /* Aligns vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: rgba(250, 221, 245, 0.425);
+    font-family: 'Work Sans'; /* Apply Work Sans font family */
+    font-weight: 400;
+  }
+  h1, h2, h3, p, a {
+    font-family: 'Work Sans', sans-serif; /* Optional: Apply to other elements if needed */
+}
+.outerdiv{
+    display: flex;
+    max-width: 70vw;
+    min-height: 40vh;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 18px;
+    padding: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 15vh;
+
+}
+.query{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+.queries{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.query{
+    border-top: 2px solid rgb(237, 237, 237);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.query:first-child {
+    border-top: none;
+    padding-bottom: 30px;
+}
+
+
+.innerdiv{
+    margin-top: 15px;
+    display:none;
+    color: rgb(126, 126, 126);
+}
+
+.hide{
+    width: 25px;
+    height: 30px;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0);
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-image: url("/assets/images/icon-plus.svg");
+    margin-top: 13px;
+    margin-left: 3px;
+
+}
+
+@media screen and (max-width: 430px) {
+    #image {
+        position: absolute; /* Positions the element relative to the viewport */
+        top: 0; /* Aligns the element at the top */
+        left: 0; /* Aligns the element to the left edge */
+        width: 100%; /* Stretches the image across the width of the page */
+        height: 200px; /* Adjusts the height as needed */
+        background-image: url("/assets/images/background-pattern-mobile.svg");
+        background-size: cover; /* Adjusts the image to cover the element */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image */
+        z-index: -1; /* Places the background behind other content */
+    }
+}
+
+@media screen and (min-width: 431px) {
+    #image {
+        position: absolute; /* Positions the element relative to the viewport */
+        top: 0; /* Aligns the element at the top */
+        left: 0; /* Aligns the element to the left edge */
+        width: 100%; /* Stretches the image across the width of the page */
+        height: 200px; /* Adjusts the height as needed */
+        background-image: url("/assets/images/background-pattern-desktop.svg");
+        background-size: cover; /* Adjusts the image to cover the element */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image */
+        z-index: -1; /* Places the background behind other content */
+    }
+
+    .outerdiv{
+        display: flex;
+        min-width: 55%;
+        max-width: 55%;
+
+      
+        flex-direction: column;
+        background-color:white;
+        border-radius: 18px;
+        padding: 20px;
+
+    
+    }
+}
+
+
+footer {
+    position: absolute; /* Positions the element relative to the viewport */
+    top: 90%; /* Aligns the element at the top */
+    z-index: -1; /* Places the background behind other content */
+}
+
+@media screen and (min-width: 780px) {
+
+    .outerdiv{
+        display: flex;
+        min-width: 55%;
+        max-width: 55%;
+        
+        max-height: auto;
+        flex-direction: column;
+        background-color:white;
+        border-radius: 18px;
+        padding: 20px;
+
+    
+    }
+}
