@@ -62,7 +62,7 @@ body {
     background-position: center;
     border: none;
     cursor: pointer;
-    background-image: url("/assets/images/icon-plus.svg");
+    background-image: url("./assets/images/icon-plus.svg");
     margin-top: 13px;
     margin-left: 3px;
 
@@ -75,7 +75,7 @@ body {
         left: 0; /* Aligns the element to the left edge */
         width: 100%; /* Stretches the image across the width of the page */
         height: 200px; /* Adjusts the height as needed */
-        background-image: url("/assets/images/background-pattern-mobile.svg");
+        background-image: url("./assets/images/background-pattern-mobile.svg");
         background-size: cover; /* Adjusts the image to cover the element */
         background-repeat: no-repeat; /* Prevents the image from repeating */
         background-position: center; /* Centers the image */
@@ -90,7 +90,7 @@ body {
         left: 0; /* Aligns the element to the left edge */
         width: 100%; /* Stretches the image across the width of the page */
         height: 200px; /* Adjusts the height as needed */
-        background-image: url("/assets/images/background-pattern-desktop.svg");
+        background-image: url("./assets/images/background-pattern-desktop.svg");
         background-size: cover; /* Adjusts the image to cover the element */
         background-repeat: no-repeat; /* Prevents the image from repeating */
         background-position: center; /* Centers the image */
