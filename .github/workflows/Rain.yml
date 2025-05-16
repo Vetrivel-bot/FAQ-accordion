@@ -1,0 +1,23 @@
+# .github/workflows/keep-warm.yml
+name: Keep Render Warm
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # every 5 minutes
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping render URLs
+        run: |
+          urls=(
+            "https://6822565551ad579288fbe52f--youtubeadd.netlify.app/"
+            "https://youtube-clone-0c28.onrender.com"
+            "https://youtube-operational-api-8xlg.onrender.com"
+          )
+          for url in "${urls[@]}"; do
+            code=$(curl -o /dev/null -s -w "%{http_code}" "$url")
+            echo "$url -> Status $code"
+          done
+        shell: bash
+        
