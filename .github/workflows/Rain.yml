@@ -11,8 +11,7 @@ jobs:
       - name: Ping render URLs
         run: |
           urls=(
-            "https://6822565551ad579288fbe52f--youtubeadd.netlify.app/"
-            "https://youtube-clone-0c28.onrender.com"
+          "https://youtube-clone-0c28.onrender.com"
             "https://youtube-operational-api-8xlg.onrender.com"
           )
           for url in "${urls[@]}"; do
