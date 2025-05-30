@@ -11,8 +11,8 @@ jobs:
       - name: Ping render URLs
         run: |
           urls=(
-          "https://youtube-clone-0c28.onrender.com"
-            "https://youtube-operational-api-8xlg.onrender.com"
+          "https://youtube-clone-1-o85t.onrender.com"
+            "https://youtube-operational-api-1.onrender.com"
           )
           for url in "${urls[@]}"; do
             code=$(curl -o /dev/null -s -w "%{http_code}" "$url")
